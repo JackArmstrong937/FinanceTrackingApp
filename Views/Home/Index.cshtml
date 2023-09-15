@@ -1,0 +1,80 @@
+﻿@model List<FinanceTrackingApp.Models.CategoryModel>
+@using FinanceTrackingApp.Models;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <title>Financial Tracking App</title>
+    <link href="/css/site.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body>
+    <div class="row">
+        <div class="col-1 sideNavBar">
+            <div class="row">
+                <div class="homeIcon"><img src="~/Images/icons8-financial-64.png" /></div>
+                <ul class="navigationTabs">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Transactions</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-11" style="padding-left: 0px">
+            <div class="mainHeader col-12">
+                <h1 class="mainHeaderTitle">Financial Tracking</h1>
+            </div>
+            <table class=" budgetTable table table-striped table-bordered table-sm col-6">
+                <thead class="thead-light">
+                    <tr>
+                        <th scopt="col">Category</th>
+                        <th scopt="col">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scopt="row">Tithe</th>
+                        <th scopt="row">100</th>
+                    </tr>
+                    <tr>
+                        <th scopt="row">Tithe</th>
+                        <th scopt="row">100</th>
+                    </tr>
+                    <tr>
+                        <th scopt="row">Tithe</th>
+                        <th scopt="row">100</th>
+                    </tr>
+                    <tr>
+                        <th scopt="row">Tithe</th>
+                        <th scopt="row">100</th>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+        
+            <form>
+                <div>
+                
+                    @*@for(int i = 0; i < Model.Count; i++)
+                    {
+                        <div>
+                            @Html.HiddenFor(m => Model[i].categoryGuid)
+                            @Html.TextBoxFor(m => Model[i].categoryName)
+                        </div>
+                    }
+           
+
+                    @foreach(CategoryModel cat in Model)
+                    {
+                        <div>@cat.categoryName</div>
+                    }*@
+                </div>
+            </form>
+    </body>
+</html>

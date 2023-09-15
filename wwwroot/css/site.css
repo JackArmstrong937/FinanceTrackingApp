@@ -1,0 +1,29 @@
+
+.mainHeader {
+    background-color: green;
+    border-bottom: 3px solid yellow;
+    box-shadow: 0px 10px 10px 0px rgb(184, 184, 184);
+}
+    .mainHeaderTitle
+    {
+        color: white;
+        margin:0px;
+        padding: 10px;
+    }
+
+.budgetTable{
+   margin:20px;
+   text-align:center;
+}
+
+.navigationTabs {
+    list-style: none;
+}
+
+.sideNavBar{
+    border-right: 1px solid grey;
+}
+
+.homeIcon{
+    margin-left:20px;
+}
